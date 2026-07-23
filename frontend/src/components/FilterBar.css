@@ -1,0 +1,63 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 14px;
+  background: var(--bgu-surface);
+  border: 1px solid var(--bgu-border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 10px rgba(15, 35, 75, 0.05);
+}
+
+.filter-bar__field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 150px;
+}
+
+.filter-bar__field label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--bgu-text-muted);
+}
+
+.filter-bar__field select,
+.filter-bar__field input {
+  border: 1px solid var(--bgu-border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+  background: #fbfcfe;
+  color: var(--bgu-text);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.filter-bar__field select:focus,
+.filter-bar__field input:focus {
+  border-color: var(--bgu-gold);
+  box-shadow: 0 0 0 3px rgba(198, 155, 63, 0.18);
+}
+
+.filter-bar__reset {
+  border: 1px solid var(--bgu-navy);
+  background: transparent;
+  color: var(--bgu-navy);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  height: 37px;
+}
+
+.filter-bar__reset:hover {
+  background: var(--bgu-navy);
+  color: #fff;
+}

@@ -1,0 +1,35 @@
+.plan-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: fade-in 0.35s ease;
+}
+
+.plan-page__intro p {
+  color: var(--bgu-text-muted);
+  margin: 6px 0 0;
+  max-width: 760px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.plan-page__summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.plan-page__chart {
+  width: 100%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,89 @@
+:root {
+  /* --- Paleta institucional BGU --- */
+  --bgu-navy: #0f2a54;
+  --bgu-navy-deep: #081a38;
+  --bgu-gold: #c69b3f;
+  --bgu-gold-soft: #e8cf94;
+  --bgu-bg: #f3f5fa;
+  --bgu-surface: #ffffff;
+  --bgu-border: #e2e7f0;
+  --bgu-text: #16223f;
+  --bgu-text-muted: #5b6b8c;
+
+  /* --- Semáforo de estado (compartido con types/index.ts) --- */
+  --estado-cumplido: #1e8f5f;
+  --estado-parcial: #f2a93b;
+  --estado-no-cumplido: #d64545;
+  --estado-sin-datos: #9aa5b1;
+  --estado-no-aplicable: #5b6b8c;
+
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bgu-bg);
+  color: var(--bgu-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  color: var(--bgu-navy);
+  margin: 0;
+}
+
+code,
+.mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--bgu-gold-soft);
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c7d0e2;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
